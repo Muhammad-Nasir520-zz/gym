@@ -78,7 +78,7 @@ class _FriendsPageState extends State<FriendsPage> {
                   return ListTile(
                     subtitle: Text("0972492"),
                     leading: CircleAvatar(child: Icon(Icons.person_outline),),
-                    title: Text('${items[index]}'),
+                    title: Text('${items[index]}',style:TextStyle(color: Colors.white)),
                   );
                 },
               ),
