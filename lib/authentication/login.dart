@@ -7,6 +7,8 @@ import 'package:flutter_signin_button/button_list.dart';
 import 'package:flutter_signin_button/button_view.dart';
 import 'package:gymapp/authentication/signup.dart';
 import 'package:gymapp/models/constants.dart';
+import 'package:gymapp/screens/friendpage.dart';
+import 'package:gymapp/screens/room_system.dart';
 
 
 class Login extends StatefulWidget {
@@ -103,6 +105,8 @@ class _LoginState extends State<Login> {
                 ),
                 color: Color(primareyColor),
                 onPressed: ()  {
+
+                  Navigator.push((context), MaterialPageRoute(builder: (context)=>RoomSystem()));
 
                 },
                 shape: RoundedRectangleBorder(
