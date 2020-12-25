@@ -28,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color(mainColor),
+      backgroundColor: Colors.black,
       body: Container(
 
         child: Stack(
@@ -43,20 +43,18 @@ class _SplashScreenState extends State<SplashScreen> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        // CircleAvatar(
-                        //   backgroundColor: Colors.white,
-                        //   radius: 80.0,
-                        //   child: new Image.asset(
-                        //     'images/detoxlogo.png',
-                        //     scale: 5,
-                        //   ),
-                        //   // Icon(
-                        //   //   Icons.shopping_cart,
-                        //
-                        //   //   color: Colors.greenAccent,
-                        //   //   size: 50.0,
-                        //   // ),
-                        // ),
+                        Container(
+                          child: new Image.asset(
+                            'assets/logo2.jpeg',
+                            scale: 5,
+                          ),
+                          // Icon(
+                          //   Icons.shopping_cart,
+
+                          //   color: Colors.greenAccent,
+                          //   size: 50.0,
+                          // ),
+                        ),
 
                       ],
                     ),
@@ -68,20 +66,24 @@ class _SplashScreenState extends State<SplashScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       CircularProgressIndicator(
+
+                        backgroundColor: Colors.black,
+                        valueColor: new AlwaysStoppedAnimation<Color>(Color(mainColor)),
+
                         // valueColor:,
                       ),
                       Padding(
                         padding: EdgeInsets.only(top: 25.0),
                       ),
                       Text(
-                        "Welcome to FITNESS & BODYBUILDING",
+                        "Welcome to PAREA",
                         // Flutkart.store,
                         softWrap: true,
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18.0,
-                            color: Color(primareyColor)),
+                            color: Color(mainColor)),
                       )
                     ],
                   ),

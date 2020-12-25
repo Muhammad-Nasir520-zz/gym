@@ -4,6 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:gymapp/models/constants.dart';
 import 'package:gymapp/screens/already_created_room.dart';
+import 'package:gymapp/screens/friendpage.dart';
 
 class CreateRoom extends StatefulWidget {
   @override
@@ -124,6 +125,7 @@ class _CreateRoomState extends State<CreateRoom> {
                 ),
                 color: Color(primareyColor),
                 onPressed: ()  {
+                  Navigator.push((context), MaterialPageRoute(builder: (context)=>FriendsPage()));
 
                 },
                 shape: RoundedRectangleBorder(

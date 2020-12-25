@@ -189,14 +189,14 @@ class _LoginState extends State<Login> {
 
   Widget goToSignUp() {
     TextStyle defaultStyle = TextStyle(color: Colors.grey, fontSize: 15.0);
-    TextStyle linkStyle = TextStyle(color: Color(primareyColor));
+    TextStyle linkStyle = TextStyle(color: Color(primareyColor),fontSize: 20);
     return RichText(
       text: TextSpan(
         style: defaultStyle,
         children: <TextSpan>[
-          TextSpan(text: "Don't have an account?"),
+          TextSpan(text: "Don't have an account?",style: TextStyle(color: Colors.white)),
           TextSpan(
-              text:"Sign Up?",
+              text:" Sign Up?",
               style: linkStyle,
               recognizer: TapGestureRecognizer()..onTap = ()
               {

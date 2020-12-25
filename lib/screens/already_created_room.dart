@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gymapp/models/constants.dart';
 import 'package:gymapp/screens/create_room.dart';
+import 'package:gymapp/screens/room_info.dart';
 
 class AlreadyCreatedRooms extends StatefulWidget {
   @override
@@ -26,18 +27,25 @@ class _AlreadyCreatedRoomsState extends State<AlreadyCreatedRooms> {
               Container(
                 margin: EdgeInsets.fromLTRB(20, 0, 20, 0),
               ),
-              Container(
-                margin: EdgeInsets.only(top: 10),
-                height: 50,
-                decoration: BoxDecoration(
-                  color: Color(lightPrimaryColor),
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
+              InkWell(
+                child: Container(
+                  margin: EdgeInsets.only(top: 10),
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: Color(lightPrimaryColor),
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                  ),
+                  child: Center(
+                      child: Text(
+                    "Room Name: 7/10 participant",
+                    style: TextStyle(fontSize: 20, color: Colors.white),
+                  )),
                 ),
-                child: Center(
-                    child: Text(
-                  "Room Name: 7/10 participant",
-                  style: TextStyle(fontSize: 20, color: Colors.white),
-                )),
+                onTap: ()
+                {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => RoomInfo()));
+                },
               ),
               Container(
                 margin: EdgeInsets.only(top: 10),

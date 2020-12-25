@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:gymapp/models/constants.dart';
+import 'package:gymapp/screens/chat_screen.dart';
 class FriendsPage extends StatefulWidget {
   //FriendsPage({Key key, this.title}) : super(key: key);
   //final String title;
@@ -12,17 +13,19 @@ class FriendsPage extends StatefulWidget {
 class _FriendsPageState extends State<FriendsPage> {
   TextEditingController editingController = TextEditingController();
 
-  final duplicateItems = List<String>.generate(3, (i) => "Friend # $i");
+  List<String> frinds=["jone","smith","breez","sam","Messi","ahmad","crew"];
+
+  //final duplicateItems = List<String>.generate(3, (i) => "Friend # $i");
   var items = List<String>();
 
   @override
   void initState() {
-    items.addAll(duplicateItems);
+    items.addAll(frinds);
     super.initState();
   }
   void filterSearchResults(String query) {
     List<String> dummySearchList = List<String>();
-    dummySearchList.addAll(duplicateItems);
+    dummySearchList.addAll(frinds);
     if (query.isNotEmpty) {
       List<String> dummyListData = List<String>();
       dummySearchList.forEach((item) {
@@ -38,7 +41,7 @@ class _FriendsPageState extends State<FriendsPage> {
     } else {
       setState(() {
         items.clear();
-        items.addAll(duplicateItems);
+        items.addAll(frinds);
       });
     }
   }
@@ -76,9 +79,17 @@ class _FriendsPageState extends State<FriendsPage> {
                 itemCount: items.length,
                 itemBuilder: (context, index) {
                   return ListTile(
-                    subtitle: Text("0972492"),
-                    leading: CircleAvatar(child: Icon(Icons.person_outline),),
-                    title: Text('${items[index]}',style:TextStyle(color: Colors.white)),
+                    subtitle: Text("+92 3351996734"),
+                    leading: CircleAvatar(
+                      backgroundColor: Colors.black,
+
+                      child: Icon(Icons.person_outline),),
+                    trailing: Icon(Icons.person_add,color: Colors.black,),
+                    title: Text('${items[index]}',style:TextStyle(color: Colors.black,fontSize: 18)),
+                    onTap: ()
+                      {
+                        Navigator.push((context), MaterialPageRoute(builder: (context)=>ChatScreen(frinds[index])));
+                      }
                   );
                 },
               ),

@@ -43,13 +43,7 @@ class _RoomSystemState extends State<RoomSystem> {
                           decoration: BoxDecoration(
                             color: Color(mainColor),
                             borderRadius: BorderRadius.all(Radius.circular(15)),
-                            // boxShadow: <BoxShadow>[
-                            //   BoxShadow(
-                            //     color: Color(primareyColor).withOpacity(0.5),
-                            //     blurRadius: 20,
-                            //     offset: Offset(0, 10),
-                            //   ),
-                            // ],
+
                           ),
                           padding: EdgeInsets.all(20),
 
@@ -71,27 +65,21 @@ class _RoomSystemState extends State<RoomSystem> {
                           decoration: BoxDecoration(
                             color: Color(mainColor),
                             borderRadius: BorderRadius.all(Radius.circular(15)),
-                            // boxShadow: <BoxShadow>[
-                            //   BoxShadow(
-                            //     color: Color(primareyColor).withOpacity(0.5),
-                            //     blurRadius: 20,
-                            //     offset: Offset(0, 10),
-                            //   ),
-                            // ],
+
                           ),
                           padding: EdgeInsets.all(20),
 
                           child: Center(
                             child: Text(
-                              "Weight Loss",
+                              "Weight Lose",
                               style: TextStyle(fontSize: 20, color: Colors.white),
                             ),
                           ),
                         ),
                         onTap: ()
                         {
-                          // Navigator.push(context,
-                          // MaterialPageRoute(builder: (context) => GridViewPageTwo()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => AlreadyCreatedRooms()));
                         },
                       ),
                       InkWell(
@@ -99,13 +87,7 @@ class _RoomSystemState extends State<RoomSystem> {
                           decoration: BoxDecoration(
                             color: Color(mainColor),
                             borderRadius: BorderRadius.all(Radius.circular(15)),
-                            // boxShadow: <BoxShadow>[
-                            //   BoxShadow(
-                            //     color: Color(primareyColor).withOpacity(0.5),
-                            //     blurRadius: 20,
-                            //     offset: Offset(0, 10),
-                            //   ),
-                            // ],
+
                           ),
                           padding: EdgeInsets.all(20),
 
@@ -118,8 +100,8 @@ class _RoomSystemState extends State<RoomSystem> {
                         ),
                         onTap: ()
                         {
-                          // Navigator.push(context,
-                          // MaterialPageRoute(builder: (context) => GridViewPageTwo()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => AlreadyCreatedRooms()));
                         },
                       ),
                       InkWell(
@@ -127,13 +109,7 @@ class _RoomSystemState extends State<RoomSystem> {
                           decoration: BoxDecoration(
                             color: Color(mainColor),
                             borderRadius: BorderRadius.all(Radius.circular(15)),
-                            // boxShadow: <BoxShadow>[
-                            //   BoxShadow(
-                            //     color: Color(primareyColor).withOpacity(0.5),
-                            //     blurRadius: 20,
-                            //     offset: Offset(0, 10),
-                            //   ),
-                            // ],
+
                           ),
                           padding: EdgeInsets.all(20),
 
@@ -146,8 +122,8 @@ class _RoomSystemState extends State<RoomSystem> {
                         ),
                         onTap: ()
                         {
-                          // Navigator.push(context,
-                          // MaterialPageRoute(builder: (context) => GridViewPageTwo()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => AlreadyCreatedRooms()));
                         },
                       ),
                       InkWell(
@@ -155,27 +131,21 @@ class _RoomSystemState extends State<RoomSystem> {
                           decoration: BoxDecoration(
                             color: Color(mainColor),
                             borderRadius: BorderRadius.all(Radius.circular(15)),
-                            // boxShadow: <BoxShadow>[
-                            //   BoxShadow(
-                            //     color: Color(primareyColor).withOpacity(0.5),
-                            //     blurRadius: 20,
-                            //     offset: Offset(0, 10),
-                            //   ),
-                            // ],
+
                           ),
                           padding: EdgeInsets.all(20),
 
                           child: Center(
                             child: Text(
-                              "Cardio",
+                              "Shoulder Press",
                               style: TextStyle(fontSize: 20, color: Colors.white),
                             ),
                           ),
                         ),
                         onTap: ()
                         {
-                          // Navigator.push(context,
-                          // MaterialPageRoute(builder: (context) => GridViewPageTwo()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => AlreadyCreatedRooms()));
                         },
                       ),
                       InkWell(
@@ -183,27 +153,21 @@ class _RoomSystemState extends State<RoomSystem> {
                           decoration: BoxDecoration(
                             color: Color(mainColor),
                             borderRadius: BorderRadius.all(Radius.circular(15)),
-                            // boxShadow: <BoxShadow>[
-                            //   BoxShadow(
-                            //     color: Color(primareyColor).withOpacity(0.5),
-                            //     blurRadius: 20,
-                            //     offset: Offset(0, 10),
-                            //   ),
-                            // ],
+
                           ),
                           padding: EdgeInsets.all(20),
 
                           child: Center(
                             child: Text(
-                              "Weight Loss",
-                              style: TextStyle(fontSize: 20, color: Color(primareyColor)),
+                              "Push Ups",
+                              style: TextStyle(fontSize: 20, color: Colors.white),
                             ),
                           ),
                         ),
                         onTap: ()
                         {
-                          // Navigator.push(context,
-                          // MaterialPageRoute(builder: (context) => GridViewPageTwo()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => AlreadyCreatedRooms()));
                         },
                       ),
                     ],
